@@ -1,0 +1,7 @@
+{
+  "name": "ion-green-sock-free",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
