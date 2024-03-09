@@ -28,7 +28,7 @@ a {
 .pSection {
     position: relative;
     padding-top: 220px;
-    padding-bottom: 300px;
+    margin-bottom: -12vh;
 }
 
 .container {
@@ -40,7 +40,7 @@ a {
 }
 
 .pContent {
-    width: 65%;
+    // width: 65%;
     background-color: rgba(78, 152, 21, 0.8);
     color: white;
     padding: 40px 60px;
@@ -49,7 +49,7 @@ a {
 .pImage {
     width: 100%;
     position: absolute;
-    top: 5%;
+    top: 0;
     right: 0;
     // max-height: 900px;
 }
