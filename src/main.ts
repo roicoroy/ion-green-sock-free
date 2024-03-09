@@ -7,6 +7,11 @@ import { routes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
 import { environment } from './environments/environment';
 
+// import "./assets/ScrollMagic/assets/js/lib/gsap3/gsap.min.js";
+// import "./assets/ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js";
+// import "./assets/ScrollMagic/scrollmagic/uncompressed/plugins/animation.gsap.js";
+// import "./assets/ScrollMagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js";
+
 if (environment.production) {
   enableProdMode();
 }

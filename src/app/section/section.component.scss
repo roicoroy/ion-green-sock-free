@@ -1,0 +1,25 @@
+div.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+ion-card.img {
+    height: 80vw;
+    max-height: 400px;
+    max-width: 800px;
+    min-width: 300px;
+    background: url(https://greensock.com/uploads/monthly_2019_11/getting-started.gif.51c803bd8739c6b1144f79fbf10ceb07.gif);
+}
+
+ion-card.desc {
+    position: absolute;
+    min-width: 240px;
+    width: 100%;
+    right: 12%;
+    bottom: 0;
+    padding: 5px;
+}
+
+.mt-5 {
+    margin-top: 30%;
+}

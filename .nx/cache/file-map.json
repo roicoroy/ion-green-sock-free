@@ -1,0 +1,1356 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.2.8",
+  "deps": {
+    "@angular/animations": "^17.0.2",
+    "@angular/common": "^17.0.2",
+    "@angular/compiler": "^17.0.2",
+    "@angular/core": "^17.0.2",
+    "@angular/forms": "^17.0.2",
+    "@angular/platform-browser": "^17.0.2",
+    "@angular/platform-browser-dynamic": "^17.0.2",
+    "@angular/router": "^17.0.2",
+    "@capacitor/app": "5.0.7",
+    "@capacitor/core": "5.7.1",
+    "@capacitor/haptics": "5.0.7",
+    "@capacitor/keyboard": "5.0.8",
+    "@capacitor/status-bar": "5.0.7",
+    "@ionic/angular": "^7.5.0",
+    "gsap": "^3.12.5",
+    "imports-loader": "^5.0.0",
+    "ionicons": "^7.2.1",
+    "jquery": "^3.7.1",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.2",
+    "@angular-devkit/build-angular": "^17.0.0",
+    "@angular-eslint/builder": "^17.0.0",
+    "@angular-eslint/eslint-plugin": "^17.0.0",
+    "@angular-eslint/eslint-plugin-template": "^17.0.0",
+    "@angular-eslint/schematics": "^17.0.0",
+    "@angular-eslint/template-parser": "^17.0.0",
+    "@angular/cli": "^17.0.0",
+    "@angular/compiler-cli": "^17.0.2",
+    "@angular/language-service": "^17.0.2",
+    "@capacitor/cli": "5.7.1",
+    "@ionic/angular-toolkit": "^9.0.0",
+    "@types/jasmine": "~5.1.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^7.26.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsdoc": "30.7.6",
+    "eslint-plugin-prefer-arrow": "1.2.2",
+    "jasmine-core": "~5.1.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "typescript": "~5.2.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".browserslistrc",
+        "hash": "7979060078399394427"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "6686520031028425313"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "18210278994710539225"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "91109559695469517"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "592272277800690021"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "5611257266296869630"
+      },
+      {
+        "file": "README.md",
+        "hash": "17857593508983991626"
+      },
+      {
+        "file": "angular.json",
+        "hash": "14662077428862072454"
+      },
+      {
+        "file": "capacitor.config.ts",
+        "hash": "11517406269772011114"
+      },
+      {
+        "file": "ionic.config.json",
+        "hash": "11846719836844171190"
+      },
+      {
+        "file": "karma.conf.js",
+        "hash": "13719387092471133633"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "14110462453215071983"
+      },
+      {
+        "file": "package.json",
+        "hash": "9990863792134186127"
+      },
+      {
+        "file": "src/app/app.component.html",
+        "hash": "14001906729921883537"
+      },
+      {
+        "file": "src/app/app.component.scss",
+        "hash": "8857836547162082820"
+      },
+      {
+        "file": "src/app/app.component.spec.ts",
+        "hash": "9353468772902956274"
+      },
+      {
+        "file": "src/app/app.component.ts",
+        "hash": "15460829862412727940"
+      },
+      {
+        "file": "src/app/app.routes.ts",
+        "hash": "2311955925531895516"
+      },
+      {
+        "file": "src/app/directives/core-animation.directive.ts",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/folder/folder.page.html",
+        "hash": "9578231402636807407"
+      },
+      {
+        "file": "src/app/folder/folder.page.scss",
+        "hash": "14639120719613408246"
+      },
+      {
+        "file": "src/app/folder/folder.page.spec.ts",
+        "hash": "11114658110054984869"
+      },
+      {
+        "file": "src/app/folder/folder.page.ts",
+        "hash": "5519598246201441024"
+      },
+      {
+        "file": "src/app/green-sock/green-sock.page.html",
+        "hash": "2662777002087940354"
+      },
+      {
+        "file": "src/app/green-sock/green-sock.page.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/green-sock/green-sock.page.ts",
+        "hash": "18139122249456716662"
+      },
+      {
+        "file": "src/app/gsap-component/gsap-component.component.html",
+        "hash": "1481681297646369754"
+      },
+      {
+        "file": "src/app/gsap-component/gsap-component.component.scss",
+        "hash": "4661936028582193054"
+      },
+      {
+        "file": "src/app/gsap-component/gsap-component.component.ts",
+        "hash": "14016158476685522531"
+      },
+      {
+        "file": "src/app/section/section.component.html",
+        "hash": "5603319682228916970"
+      },
+      {
+        "file": "src/app/section/section.component.scss",
+        "hash": "7145558358455601300"
+      },
+      {
+        "file": "src/app/section/section.component.spec.ts",
+        "hash": "5072621085198824396"
+      },
+      {
+        "file": "src/app/section/section.component.ts",
+        "hash": "10453469598959852545"
+      },
+      {
+        "file": "src/assets/ScrollMagic/.gitignore",
+        "hash": "3101143806679706682"
+      },
+      {
+        "file": "src/assets/ScrollMagic/.nojekyll",
+        "hash": "12248463266184448080"
+      },
+      {
+        "file": "src/assets/ScrollMagic/.travis.yml",
+        "hash": "2392237031825622160"
+      },
+      {
+        "file": "src/assets/ScrollMagic/CHANGELOG.md",
+        "hash": "14338808316107794980"
+      },
+      {
+        "file": "src/assets/ScrollMagic/CONTRIBUTING.md",
+        "hash": "8688986352079282942"
+      },
+      {
+        "file": "src/assets/ScrollMagic/LICENSE.md",
+        "hash": "2175259693856039873"
+      },
+      {
+        "file": "src/assets/ScrollMagic/README.md",
+        "hash": "3720127386666141137"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/css/demo.css",
+        "hash": "14259083728824271531"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/css/examples.css",
+        "hash": "18310020020302940284"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/css/normalize.css",
+        "hash": "780786173051346858"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/css/style.css",
+        "hash": "9566331768607230379"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/apple-touch-icon-precomposed.png",
+        "hash": "14057430238754925690"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/btn_donate.svg",
+        "hash": "1497001502613719172"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/btn_support.svg",
+        "hash": "13112918114775651745"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_arrow_scroll.png",
+        "hash": "13654140841094531844"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_arrow_skip.png",
+        "hash": "9529494844896046626"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_bubble.png",
+        "hash": "18103718796947454941"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_bunny.png",
+        "hash": "9156189002354477959"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_bunny_wink.png",
+        "hash": "11313080538238251461"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_fb_preview.jpg",
+        "hash": "4088877000956486998"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_floor.png",
+        "hash": "7873491653916412833"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_hat.png",
+        "hash": "15887963943406819899"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_hat_front.png",
+        "hash": "12875813834717530638"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_parallax_bg.png",
+        "hash": "651953152161277759"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_parallax_shadow_bottom.png",
+        "hash": "10417429806331608909"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_parallax_shadow_top.png",
+        "hash": "5724303645769518765"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_spark1.png",
+        "hash": "16023869746843669246"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_spark2.png",
+        "hash": "2474379513631379617"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_spark3.png",
+        "hash": "5695032419329556242"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_spark4.png",
+        "hash": "16895918306473639309"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_spark5.png",
+        "hash": "1365509194414680716"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_spark6.png",
+        "hash": "259247952839224236"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_tophat.png",
+        "hash": "6128746072166570249"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/demo_wand.png",
+        "hash": "17097702901528404383"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_bezier.png",
+        "hash": "14081616253601923888"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_bg_h.png",
+        "hash": "15941929898435722715"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_bg_spacer_h.gif",
+        "hash": "3816790388402887169"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_bg_spacer_v.gif",
+        "hash": "14122687661759886902"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_bg_v.png",
+        "hash": "1627164993951219638"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_imagesequence_01.png",
+        "hash": "16985290661751396731"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_imagesequence_02.png",
+        "hash": "3901164429710357747"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_imagesequence_03.png",
+        "hash": "11757322035728024399"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_imagesequence_04.png",
+        "hash": "7717768547890029710"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_imagesequence_05.png",
+        "hash": "17479053031423880733"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_imagesequence_06.png",
+        "hash": "2761954718362023052"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_imagesequence_07.png",
+        "hash": "3113296616393079062"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_loading.gif",
+        "hash": "15992818832819708923"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_parallax_bg1.png",
+        "hash": "11237807047551390301"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_parallax_bg2.png",
+        "hash": "6969036354979557153"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_parallax_bg3.png",
+        "hash": "4725110770054666438"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_parallax_l1.gif",
+        "hash": "775185177828389827"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_parallax_l2.png",
+        "hash": "5482773379804776148"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/example_parallax_l3.gif",
+        "hash": "1335127161407529973"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/favicon.ico",
+        "hash": "13990149614111660520"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/madewith_alfred.jpg",
+        "hash": "9081655249668934370"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/madewith_appliancetec.jpg",
+        "hash": "6907009861981735285"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/madewith_buntspenden.jpg",
+        "hash": "9404785570543372917"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/madewith_flyacts.jpg",
+        "hash": "12623293348342619493"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/madewith_framescollection.jpg",
+        "hash": "10958181704364218902"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/madewith_googlecardboard.jpg",
+        "hash": "706762081889550081"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/madewith_scotchdigital.jpg",
+        "hash": "10209763910636949019"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/madewith_sebastienlempens.jpg",
+        "hash": "17170140562221951904"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/madewith_tink.jpg",
+        "hash": "17009539612108953653"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/img/madewith_viko.jpg",
+        "hash": "7091856711773714809"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/demo.js",
+        "hash": "6259238462861041898"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/examples.js",
+        "hash": "3605109524661210867"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/TimelineLite.min.js",
+        "hash": "13395467489638298761"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/TimelineMax.min.js",
+        "hash": "6098078096675837106"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/TweenLite.min.js",
+        "hash": "11154809742765559547"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/TweenMax.min.js",
+        "hash": "3239788409182733920"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/easing/EasePack.min.js",
+        "hash": "14674384728327913215"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/jquery.gsap.min.js",
+        "hash": "1506324288313338203"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/plugins/AttrPlugin.min.js",
+        "hash": "15734586043706443771"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/plugins/BezierPlugin.min.js",
+        "hash": "5692563483977739482"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/plugins/CSSPlugin.min.js",
+        "hash": "438344786504487559"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/plugins/CSSRulePlugin.min.js",
+        "hash": "2290868658593415509"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/plugins/ColorPropsPlugin.min.js",
+        "hash": "1833621911073267454"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/plugins/DirectionalRotationPlugin.min.js",
+        "hash": "14711729676818409307"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/plugins/EaselPlugin.min.js",
+        "hash": "11014717067904145019"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/plugins/EndArrayPlugin.min.js",
+        "hash": "16630354524339013397"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/plugins/ModifiersPlugin.min.js",
+        "hash": "16060030008161312042"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/plugins/PixiPlugin.min.js",
+        "hash": "18442352714205395220"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/plugins/RaphaelPlugin.min.js",
+        "hash": "8194544727004234002"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/plugins/RoundPropsPlugin.min.js",
+        "hash": "16900684307270861154"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/plugins/ScrollToPlugin.min.js",
+        "hash": "18113730910847932586"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/plugins/TextPlugin.min.js",
+        "hash": "9804159584089170964"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/greensock/utils/Draggable.min.js",
+        "hash": "6263685039807264915"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/gsap3/CSSRulePlugin.min.js",
+        "hash": "11377766854083114018"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/gsap3/Draggable.min.js",
+        "hash": "8321739437930485309"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/gsap3/EasePack.min.js",
+        "hash": "8544833230615559900"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/gsap3/EaselPlugin.min.js",
+        "hash": "16546236530625200076"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/gsap3/MotionPathPlugin.min.js",
+        "hash": "12503904819872721755"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/gsap3/PixiPlugin.min.js",
+        "hash": "11333470643136037702"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/gsap3/ScrollToPlugin.min.js",
+        "hash": "5631882110244161872"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/gsap3/TextPlugin.min.js",
+        "hash": "6587420077976505296"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/gsap3/gsap.min.js",
+        "hash": "9648157872043687734"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/highlight.pack.js",
+        "hash": "16041342317001113608"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/iscroll-probe.js",
+        "hash": "15019860689092657841"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/jquery.min.js",
+        "hash": "15550645677410345519"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/modernizr.custom.min.js",
+        "hash": "13354936449639745649"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/lib/velocity.min.js",
+        "hash": "8505829455024958755"
+      },
+      {
+        "file": "src/assets/ScrollMagic/assets/js/tracking.js",
+        "hash": "18177564185298310460"
+      },
+      {
+        "file": "src/assets/ScrollMagic/bower.json",
+        "hash": "11118241716677208227"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/build/banner.min.txt",
+        "hash": "18230265844395834306"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/build/banner.regular.txt",
+        "hash": "8301647740512081870"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/build/config.json",
+        "hash": "12931919955434028858"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/build/filesize.js",
+        "hash": "17962092294838613454"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/build/jsdoc-generator.js",
+        "hash": "15829821362407789200"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/build/logger.js",
+        "hash": "11749961035828570681"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/jsdoc.conf.json",
+        "hash": "10619884882080836388"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/static/ScrollScene.html",
+        "hash": "17535707124252950226"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/publish.js",
+        "hash": "12498951731443590640"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/img/glyphicons-halflings-white.png",
+        "hash": "12427567634417418347"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/img/glyphicons-halflings.png",
+        "hash": "8841635424920705237"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/scripts/URI.js",
+        "hash": "9681601523476479871"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/scripts/bootstrap-dropdown.js",
+        "hash": "11822427842932860298"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/scripts/bootstrap-tab.js",
+        "hash": "10877478388655046106"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/scripts/jquery.localScroll.js",
+        "hash": "4497996194536400792"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/scripts/jquery.min.js",
+        "hash": "16969357503762660239"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/scripts/jquery.scrollTo.js",
+        "hash": "2655487446265230962"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/scripts/jquery.sunlight.js",
+        "hash": "839479425660073729"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/scripts/prettify/jquery.min.js",
+        "hash": "13482667221960055570"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/scripts/prettify/lang-css.js",
+        "hash": "10980346519486926666"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/scripts/prettify/prettify.js",
+        "hash": "14990950428264787507"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/scripts/sunlight-plugin.doclinks.js",
+        "hash": "14392754574180162161"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/scripts/sunlight-plugin.linenumbers.js",
+        "hash": "9798454615844596897"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/scripts/sunlight-plugin.menu.js",
+        "hash": "13222285739950713419"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/scripts/sunlight.javascript.js",
+        "hash": "17407162984646803891"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/scripts/sunlight.js",
+        "hash": "13864322395836801897"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/scripts/toc.js",
+        "hash": "16515171708848779076"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/styles/prettify-tomorrow.css",
+        "hash": "12292534916456408096"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/styles/site.cosmo.css",
+        "hash": "10405427570602219957"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/static/styles/sunlight.default.css",
+        "hash": "16606729531230412454"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/tmpl/container.tmpl",
+        "hash": "17472670645344536056"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/tmpl/details.tmpl",
+        "hash": "2010257439307881802"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/tmpl/example.tmpl",
+        "hash": "1500174734977624388"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/tmpl/examples.tmpl",
+        "hash": "5800858919849465898"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/tmpl/exceptions.tmpl",
+        "hash": "1910476089746906262"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/tmpl/fires.tmpl",
+        "hash": "11759008017543864237"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/tmpl/layout.tmpl",
+        "hash": "9520980990125297463"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/tmpl/mainpage.tmpl",
+        "hash": "6430529447306947946"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/tmpl/members.tmpl",
+        "hash": "5111041817077714887"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/tmpl/method.tmpl",
+        "hash": "9622415117006495309"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/tmpl/params.tmpl",
+        "hash": "1833424964795588410"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/tmpl/properties.tmpl",
+        "hash": "648590233800864060"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/tmpl/returns.tmpl",
+        "hash": "758608495736507232"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/tmpl/sections.tmpl",
+        "hash": "13571427163350338499"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/tmpl/source.tmpl",
+        "hash": "12782502126634709034"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/tmpl/tutorial.tmpl",
+        "hash": "18125366163572561939"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/docs/template/tmpl/type.tmpl",
+        "hash": "13580206617122679871"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/src/ScrollMagic.js",
+        "hash": "12514571737407615749"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/src/ScrollMagic/Controller.js",
+        "hash": "2739041363237119233"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/src/ScrollMagic/Controller/_static.js",
+        "hash": "10420246435123849556"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/src/ScrollMagic/Event.js",
+        "hash": "3058293902857930749"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/src/ScrollMagic/Scene.js",
+        "hash": "620856680554677888"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/src/ScrollMagic/Scene/_static.js",
+        "hash": "10158681039169119827"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/src/ScrollMagic/Scene/core.js",
+        "hash": "15355391794801552943"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/src/ScrollMagic/Scene/event-management.js",
+        "hash": "5050794084712973299"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/src/ScrollMagic/Scene/feature-classToggles.js",
+        "hash": "3479169375175528150"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/src/ScrollMagic/Scene/feature-pinning.js",
+        "hash": "8166618518372585480"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/src/ScrollMagic/Scene/getters-setters.js",
+        "hash": "8048240962735962080"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/src/ScrollMagic/Scene/update-params.js",
+        "hash": "1028444715068536729"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/src/ScrollMagic/_util.js",
+        "hash": "3136984737875088863"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/src/plugins.json",
+        "hash": "4965571848624104409"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/src/plugins/animation.gsap.js",
+        "hash": "13555882935981503068"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/src/plugins/animation.velocity.js",
+        "hash": "4900932248371132259"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/src/plugins/debug.addIndicators.js",
+        "hash": "14145552879012867157"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/src/plugins/jquery.ScrollMagic.js",
+        "hash": "10275362120337039652"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/tests/fixtures/container-scroll.html",
+        "hash": "17567105208323740931"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/tests/karma.conf.js",
+        "hash": "5452004997060506961"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/tests/karma/jasmine.matchers.js",
+        "hash": "4236286894983322143"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/tests/karma/vendor/jasmine-jquery.js",
+        "hash": "16130242877575509355"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/tests/main.js",
+        "hash": "15247657307716065480"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/tests/spec/_util.js",
+        "hash": "11764351891262045468"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/tests/spec/controller.events.js",
+        "hash": "12242057190878198675"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/tests/spec/controller.js",
+        "hash": "12993866140193869295"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/tests/spec/plugins/animation.gsap.js",
+        "hash": "13519922214226265685"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/tests/spec/plugins/animation.velocity.js",
+        "hash": "12283832118733849708"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/tests/spec/plugins/debug.addIndicators.js",
+        "hash": "4628733206051594909"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/tests/spec/plugins/jquery.ScrollMagic.js",
+        "hash": "11867207715795575601"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/tests/spec/scene.events.js",
+        "hash": "9268820856465326685"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/tests/spec/scene.js",
+        "hash": "15776259546268618975"
+      },
+      {
+        "file": "src/assets/ScrollMagic/dev/todo.md",
+        "hash": "4413636198313793750"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/ScrollMagic.Controller.html",
+        "hash": "11099431169275960320"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/ScrollMagic.Scene.html",
+        "hash": "15956369963628553586"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/ScrollMagic.html",
+        "hash": "12348065242384402619"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/ScrollMagic.js.html",
+        "hash": "12953477783083234744"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/ScrollMagic_Controller.js.html",
+        "hash": "7678366366515419350"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/ScrollMagic_Scene.js.html",
+        "hash": "6029047844753105650"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/ScrollMagic_Scene_core.js.html",
+        "hash": "17625166026852548389"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/ScrollMagic_Scene_event-management.js.html",
+        "hash": "9976089307312240999"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/ScrollMagic_Scene_feature-classToggles.js.html",
+        "hash": "17018220340289707926"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/ScrollMagic_Scene_feature-pinning.js.html",
+        "hash": "7775195161530962208"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/ScrollMagic_Scene_getters-setters.js.html",
+        "hash": "8632329721277523565"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/ScrollMagic__util.js.html",
+        "hash": "484552271155000712"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/ScrollScene.html",
+        "hash": "17535707124252950226"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/animation.GSAP.html",
+        "hash": "1830743206700697885"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/animation.Velocity.html",
+        "hash": "8660174311860014693"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/classes.list.html",
+        "hash": "6719610347968836840"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/debug.addIndicators.html",
+        "hash": "4989218775926201366"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/framework.jQuery.html",
+        "hash": "3294512809110744587"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/img/glyphicons-halflings-white.png",
+        "hash": "12427567634417418347"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/img/glyphicons-halflings.png",
+        "hash": "8841635424920705237"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/index.html",
+        "hash": "10671746600916567293"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/mixins.list.html",
+        "hash": "1234249301307725708"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/namespaces.list.html",
+        "hash": "8164788212197568942"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/plugins_animation.gsap.js.html",
+        "hash": "4336551473223320279"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/plugins_animation.velocity.js.html",
+        "hash": "17942051666532870589"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/plugins_debug.addIndicators.js.html",
+        "hash": "2729881612695185664"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/plugins_jquery.ScrollMagic.js.html",
+        "hash": "1633700246142712591"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/scripts/URI.js",
+        "hash": "9681601523476479871"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/scripts/bootstrap-dropdown.js",
+        "hash": "11822427842932860298"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/scripts/bootstrap-tab.js",
+        "hash": "10877478388655046106"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/scripts/jquery.localScroll.js",
+        "hash": "4497996194536400792"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/scripts/jquery.min.js",
+        "hash": "16969357503762660239"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/scripts/jquery.scrollTo.js",
+        "hash": "2655487446265230962"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/scripts/jquery.sunlight.js",
+        "hash": "839479425660073729"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/scripts/prettify/jquery.min.js",
+        "hash": "13482667221960055570"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/scripts/prettify/lang-css.js",
+        "hash": "10980346519486926666"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/scripts/prettify/prettify.js",
+        "hash": "14990950428264787507"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/scripts/sunlight-plugin.doclinks.js",
+        "hash": "14392754574180162161"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/scripts/sunlight-plugin.linenumbers.js",
+        "hash": "9798454615844596897"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/scripts/sunlight-plugin.menu.js",
+        "hash": "13222285739950713419"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/scripts/sunlight.javascript.js",
+        "hash": "17407162984646803891"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/scripts/sunlight.js",
+        "hash": "13864322395836801897"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/scripts/toc.js",
+        "hash": "16515171708848779076"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/styles/prettify-tomorrow.css",
+        "hash": "12292534916456408096"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/styles/site.cosmo.css",
+        "hash": "10405427570602219957"
+      },
+      {
+        "file": "src/assets/ScrollMagic/docs/styles/sunlight.default.css",
+        "hash": "16606729531230412454"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/advanced/advanced_tweening.html",
+        "hash": "8560909134827318177"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/advanced/anchor_link_scrolling.html",
+        "hash": "9242225737723916905"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/advanced/animate_css.html",
+        "hash": "15957906386577952279"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/advanced/custom_containers.html",
+        "hash": "8598562592223464145"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/advanced/infinite_scrolling.html",
+        "hash": "7756760721961448895"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/advanced/mobile_basic.html",
+        "hash": "8636911105593040300"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/advanced/parallax_scrolling.html",
+        "hash": "3075859479899448498"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/advanced/parallax_sections.html",
+        "hash": "8592541757706505845"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/advanced/section_slides_manual.html",
+        "hash": "9010650770506503765"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/advanced/section_wipes_manual.html",
+        "hash": "12079958789466153343"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/advanced/svg_drawing.html",
+        "hash": "15164398716368971180"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/basic/class_toggles.html",
+        "hash": "2631022632454076309"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/basic/custom_actions.html",
+        "hash": "2591089908801145955"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/basic/debugging.html",
+        "hash": "5253203042486155047"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/basic/going_horizontal.html",
+        "hash": "11025275269450780913"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/basic/responsive_duration.html",
+        "hash": "16939494979078030727"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/basic/reveal_on_scroll.html",
+        "hash": "2244544864784037599"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/basic/scene_manipulation.html",
+        "hash": "14873148078510395360"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/basic/section_wipes_natural.html",
+        "hash": "7808477847436031190"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/basic/simple_pinning.html",
+        "hash": "16731763649669526306"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/basic/simple_tweening.html",
+        "hash": "12441721888385868149"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/basic/simple_velocity.html",
+        "hash": "2043360665717170272"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/expert/bezier_path_animation.html",
+        "hash": "18266961589043250038"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/expert/callback_duration.html",
+        "hash": "431678905183932461"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/expert/cascading_pins.html",
+        "hash": "15591988449401818940"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/expert/image_sequence.html",
+        "hash": "11951613880405492817"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/expert/manipulating_tweens.html",
+        "hash": "11069272889060426952"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/expert/mobile_advanced.html",
+        "hash": "17834644570044096509"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/expert/multiple_scroll_directions.html",
+        "hash": "10886183174657344157"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/expert/removing_and_destroying.html",
+        "hash": "2346622295900846728"
+      },
+      {
+        "file": "src/assets/ScrollMagic/examples/index.html",
+        "hash": "12411724067342395206"
+      },
+      {
+        "file": "src/assets/ScrollMagic/gulpfile.js",
+        "hash": "2745452586736014147"
+      },
+      {
+        "file": "src/assets/ScrollMagic/index.html",
+        "hash": "9996353886255397648"
+      },
+      {
+        "file": "src/assets/ScrollMagic/package.json",
+        "hash": "8506158581116911081"
+      },
+      {
+        "file": "src/assets/ScrollMagic/scrollmagic/minified/ScrollMagic.min.js",
+        "hash": "15561892955082662927"
+      },
+      {
+        "file": "src/assets/ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js",
+        "hash": "16180332310691188623"
+      },
+      {
+        "file": "src/assets/ScrollMagic/scrollmagic/minified/plugins/animation.velocity.min.js",
+        "hash": "15329478115843002510"
+      },
+      {
+        "file": "src/assets/ScrollMagic/scrollmagic/minified/plugins/debug.addIndicators.min.js",
+        "hash": "689213992102339968"
+      },
+      {
+        "file": "src/assets/ScrollMagic/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js",
+        "hash": "2215022051135216629"
+      },
+      {
+        "file": "src/assets/ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js",
+        "hash": "15784164847373989832"
+      },
+      {
+        "file": "src/assets/ScrollMagic/scrollmagic/uncompressed/plugins/animation.gsap.js",
+        "hash": "131080824762556752"
+      },
+      {
+        "file": "src/assets/ScrollMagic/scrollmagic/uncompressed/plugins/animation.velocity.js",
+        "hash": "1032287767422262575"
+      },
+      {
+        "file": "src/assets/ScrollMagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js",
+        "hash": "9282365738969103732"
+      },
+      {
+        "file": "src/assets/ScrollMagic/scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js",
+        "hash": "15814639073604306258"
+      },
+      {
+        "file": "src/assets/ScrollMagic/yarn.lock",
+        "hash": "8733799562809424939"
+      },
+      {
+        "file": "src/assets/ScrollTrigger.min.js",
+        "hash": "17736628155528698021"
+      },
+      {
+        "file": "src/assets/SplitText3.min.js",
+        "hash": "13295277721819632327"
+      },
+      {
+        "file": "src/assets/gsap-latest-beta.min.js",
+        "hash": "2086192250713883611"
+      },
+      {
+        "file": "src/assets/icon/favicon.png",
+        "hash": "17482944836898362639"
+      },
+      {
+        "file": "src/assets/shapes.svg",
+        "hash": "4708889011185296100"
+      },
+      {
+        "file": "src/environments/environment.prod.ts",
+        "hash": "5406836414239361753"
+      },
+      {
+        "file": "src/environments/environment.ts",
+        "hash": "17458466784506237106"
+      },
+      {
+        "file": "src/global.scss",
+        "hash": "16798334878497557909"
+      },
+      {
+        "file": "src/index.html",
+        "hash": "5962093970713772175"
+      },
+      {
+        "file": "src/main.ts",
+        "hash": "12779585764728050644"
+      },
+      {
+        "file": "src/polyfills.ts",
+        "hash": "11812151144158597559"
+      },
+      {
+        "file": "src/test.ts",
+        "hash": "12412031923219697029"
+      },
+      {
+        "file": "src/theme/variables.scss",
+        "hash": "10683809365950317113"
+      },
+      {
+        "file": "src/zone-flags.ts",
+        "hash": "3323586086306676158"
+      },
+      {
+        "file": "tsconfig.app.json",
+        "hash": "9041030522571917449"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "12182873721089397579"
+      },
+      {
+        "file": "tsconfig.spec.json",
+        "hash": "17198424518534092990"
+      }
+    ]
+  }
+}
