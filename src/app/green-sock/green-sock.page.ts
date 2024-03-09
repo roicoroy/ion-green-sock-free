@@ -8,9 +8,6 @@ import { GsapComponentComponent } from '../gsap-component/gsap-component.compone
 //
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-// import SplitText from 'gsap/SplitText';
-// @ts-ignore
-// import * as SplitText from '../../assets/SplitText3.min.js';
 declare var SplitText: any;
 
 @Component({
@@ -29,7 +26,7 @@ export class GreenSockPage implements OnInit {
 
   @ViewChild('slideLeft') slideLeft!: ElementRef;
 
-  scroll!: any;
+  scroll: any;
 
   ngOnInit() {
     gsap.registerPlugin(ScrollTrigger, SplitText);
@@ -67,30 +64,65 @@ export class GreenSockPage implements OnInit {
 
     });
 
-    gsap.to(".pContent", {
-      yPercent: -100,
+    gsap.to("ion-card", {
+      yPercent: -50,
       ease: "none",
       scrollTrigger: {
-        scroller: scrollProxy,
-        trigger: ".pSection",
-        // start: "top bottom", // the default values
-        // end: "bottom top",
+        trigger: "ion-img",
+        scroller: 'ion-content',
         scrub: true
       },
     });
 
-    gsap.to(".pImage", {
-      yPercent: 50,
+    gsap.to("ion-img", {
+      // yPercent: -50,
       ease: "none",
+      x: 100,
+      duration: 1,
+      rotate: 360,
       scrollTrigger: {
-        trigger: ".pSection",
-        scroller: scrollProxy,
-        // start: "top bottom", // the default values
-        // end: "bottom top",
+        trigger: "ion-img",
+        toggleActions: "play pause resume reverse",
+        start: "top center",
+        scroller: 'ion-content',
         scrub: true
       },
     });
 
+    gsap.to(".green", {
+      scrollTrigger: {
+        trigger: ".green",
+        toggleActions: "play none none reverse",
+        scroller: scrollProxy,
+        scrub: true
+      },
+      rotation: 360, x: 100,
+      duration: 1
+    });
+
+    // gsap.to(".pContent", {
+    //   yPercent: -100,
+    //   ease: "none",
+    //   scrollTrigger: {
+    //     scroller: scrollProxy,
+    //     trigger: ".pSection",
+    //     // start: "top bottom", // the default values
+    //     // end: "bottom top",
+    //     scrub: true
+    //   },
+    // });
+
+    // gsap.to(".pImage", {
+    //   yPercent: 50,
+    //   ease: "none",
+    //   scrollTrigger: {
+    //     trigger: ".pSection",
+    //     scroller: scrollProxy,
+    //     // start: "top bottom", // the default values
+    //     // end: "bottom top",
+    //     scrub: true
+    //   },
+    // });
 
     // @ts-ignore
     gsap.config({ trialWarn: false });

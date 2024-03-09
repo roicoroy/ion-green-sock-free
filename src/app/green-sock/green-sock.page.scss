@@ -20,6 +20,26 @@ h1 {
 
 // 
 
+ion-card {
+    position: relative;
+    z-index: 1;
+    // top: -72px;
+}
+
+ion-img {
+    z-index: -1;
+    // width: 100%;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+}
+
+.text-body {
+    position: relative;
+    z-index: -1;
+    background-color: aqua;
+}
+
 a {
     color: #555;
     font-weight: 400;
@@ -53,3 +73,9 @@ a {
     right: 0;
     // max-height: 900px;
 }
+
+
+
+
+
+// 

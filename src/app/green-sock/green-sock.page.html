@@ -1,5 +1,8 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>
       Ionic GSAP Example
     </ion-title>
@@ -20,31 +23,23 @@
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, distinctio quia! Rerum voluptas aspernatur sed
     temporibus tenetur expedita harum incidunt officia assumenda error possimus nisi cum, laborum alias magni libero.
   </ion-text>
-  <section class="pSection">
-    <div class="container">
 
-      <!-- <ion-card>
-        <p>This is a super simple example of how to create a basic parallax effect using GSAP's ScrollTrigger!</p>
-        <p>For more information about ScrollTrigger, check out <a href="https://greensock.com" target="_blank">the
-            GreenSock website.</a></p>
-      </ion-card> -->
+  <ion-card>
+    <p>This is a super simple example of how to create a basic parallax effect using GSAP's ScrollTrigger!</p>
+    <p>For more information about ScrollTrigger, check out <a href="https://greensock.com" target="_blank">the
+        GreenSock website.</a></p>
+  </ion-card>
 
-      <div class="pContent">
-        <p>This is a super simple example of how to create a basic parallax effect using GSAP's ScrollTrigger!</p>
-        <p>For more information about ScrollTrigger, check out <a href="https://greensock.com" target="_blank">the
-            GreenSock website.</a></p>
-      </div>
-    </div>
-    <img class="pImage" src="https://picsum.photos/1200/526?random=1" alt="Filler image">
-  </section>
-
-
-  <ion-text color="dark">
+  <ion-text class="text-body" color="dark">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, distinctio quia! Rerum voluptas aspernatur sed
     temporibus tenetur expedita harum incidunt officia assumenda error possimus nisi cum, laborum alias magni libero.
 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, distinctio quia! Rerum voluptas aspernatur sed
+    <ion-img [src]="'https://picsum.photos/1200/526?random=1'"></ion-img>
+
+    <span class="trigger">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, distinctio quia! Rerum voluptas aspernatur sed
     temporibus tenetur expedita harum incidunt officia assumenda error possimus nisi cum, laborum alias magni libero.
+    </span>
 
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, distinctio quia! Rerum voluptas aspernatur sed
     temporibus tenetur expedita harum incidunt officia assumenda error possimus nisi cum, laborum alias magni libero.
@@ -61,6 +56,8 @@
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, distinctio quia! Rerum voluptas aspernatur sed
     temporibus tenetur expedita harum incidunt officia assumenda error possimus nisi cum, laborum alias magni libero.
   </ion-text>
+
+  <div class="box green"></div>
 
   <ion-text color="dark">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, distinctio quia! Rerum voluptas aspernatur sed

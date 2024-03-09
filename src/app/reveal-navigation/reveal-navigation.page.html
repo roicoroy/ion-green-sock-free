@@ -1,0 +1,192 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>reveal-navigation</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="warning" class="ion-padding" [scrollEvents]="true"
+  (ionScroll)="handleScroll($any($event))">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">reveal-navigation</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card class="yoyo">
+          <ion-img src="assets/shapes.svg"></ion-img>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4" class="gs_reveal gs_reveal_fromLeft">
+        <span class="gs_reveal ipsType_left">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi enim commodi incidunt voluptate
+          labore mollitia ab dignissimos repellat asperiores sequi assumenda ipsa iure temporibus architecto, a ex.
+          Numquam, unde.
+        </span>
+      </ion-col>
+      <ion-col size="8" class="gs_reveal gs_reveal_fromRight">
+        <ion-card class="gs_reveal">
+          <ion-card-header>
+            <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+            <ion-card-title>Awesome Title</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Awesome content
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+
+      <ion-col size="8" class="gs_reveal gs_reveal_fromLeft">
+        <ion-card class="ipsType_left gs_reveal">
+          <ion-card-header class="">
+            <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+            <ion-card-title>Awesome Title</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos minus dolore autem, culpa nisi totam
+            distinctio molestias pariatur. Cumque debitis necessitatibus, ad exercitationem eum aliquam provident
+            nesciunt dicta placeat veritatis!
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4" class="gs_reveal gs_reveal_fromRight">
+        <span class="ipsType_right gs_reveal">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi enim commodi incidunt voluptate
+          labore mollitia ab dignissimos repellat asperiores sequi assumenda ipsa iure temporibus architecto, a ex.
+          Numquam, unde.
+        </span>
+      </ion-col>
+
+      <ion-col size="4" class="gs_reveal gs_reveal_fromLeft">
+        <span class="gs_reveal ipsType_left">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi enim commodi incidunt voluptate
+          labore mollitia ab dignissimos repellat asperiores sequi assumenda ipsa iure temporibus architecto, a ex.
+          Numquam, unde.
+        </span>
+      </ion-col>
+      <ion-col size="8" class="gs_reveal gs_reveal_fromRight">
+        <ion-card class="gs_reveal">
+          <ion-card-header>
+            <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+            <ion-card-title>Awesome Title</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Awesome content
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="8" class="gs_reveal gs_reveal_fromLeft">
+        <ion-card class="ipsType_left gs_reveal">
+          <ion-card-header class="">
+            <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+            <ion-card-title>Awesome Title</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos minus dolore autem, culpa nisi totam
+            distinctio molestias pariatur. Cumque debitis necessitatibus, ad exercitationem eum aliquam provident
+            nesciunt dicta placeat veritatis!
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4" class="gs_reveal gs_reveal_fromRight">
+        <span class="ipsType_right gs_reveal">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi enim commodi incidunt voluptate
+          labore mollitia ab dignissimos repellat asperiores sequi assumenda ipsa iure temporibus architecto, a ex.
+          Numquam, unde.
+        </span>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+
+  <div class="gs-body">
+    <div class="cInnerContent">
+      <h1 class="header-section ipsType_center">
+        Scroll down and up to see different reveal animations
+      </h1>
+
+      <div class="features">
+
+        <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+          <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
+            <div class="card">
+              <img width="479" src="https://picsum.photos/479/479?index=1" alt="">
+            </div>
+          </div>
+
+          <div class="ipsGrid_span7 ipsType_left">
+            <h2 class="heading_large gs_reveal">Create amazing <strong>SVG</strong> animations</h2>
+            <p class="gs_reveal"><a href="https://greensock.com/drawsvg/">DrawSVGPlugin</a> allows you to progressively
+              reveal (or hide) SVG strokes to make them look like they're being drawn. <a
+                href="https://greensock.com/morphsvg/">MorphSVGPlugin</a> to Morph any SVG shape into any other shape
+              smoothly regardless of the number of points in each. <a
+                href="/docs/v3/Plugins/MotionPathPlugin">MotionPathPlugin</a> allows you to easily move any object along
+              a path.</p>
+          </div>
+        </div>
+
+        <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+          <div class="ipsGrid_span7 ipsType_right">
+            <h2 class="heading_large gs_reveal">Supercharge immersive <strong>WebGL</strong> experiences</h2>
+            <p class="gs_reveal">GreenSock is used in some of the most popular <a href="//threejs.org/">Three.js</a>
+              powered WebGL projects. Animate any object in a scene. <a
+                href="https://greensock.com/PixiPlugin/">PixiPlugin</a> makes animating <a
+                href="//www.pixijs.com/">Pixi.js</a> objects with GSAP a breeze. Animate position, scale, color effects
+              and more with all the power and control of GSAP and the rendering speed of Pixi.js.</p>
+          </div>
+
+          <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
+            <div class="card">
+              <img width="479" src="https://picsum.photos/479/479?index=2" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+          <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromLeft">
+            <div class="card">
+              <img width="479" src="https://picsum.photos/479/479?index=3" alt="">
+            </div>
+          </div>
+
+          <div class="ipsGrid_span7 ipsType_left">
+            <h2 class="heading_large gs_reveal">Control performant <strong>Canvas</strong> animations</h2>
+            <p class="gs_reveal">GSAP makes animating with Canvas even easier by providing an easier way to look and
+              sequence animations. GSAP works great with <a href="//www.adobe.com/products/animate.html">Adobe
+                Animate</a> and <a href="//createjs.com/easeljs">EaseJS</a> through GSAP's <a
+                href="https://greensock.com/easelplugin/">EaselJSPlugin</a>.</p>
+          </div>
+        </div>
+
+        <div class="feature ipsSpacer_bottom_double ipsGrid ipsGrid_collapsePhone">
+          <div class="ipsGrid_span7 ipsType_right">
+            <h2 class="heading_large gs_reveal"><strong>Award winning</strong> websites</h2>
+            <p class="gs_reveal">GSAP is used on over 8,500,000 sites and over 1,000 sites featured on <a
+                href="https://www.awwwards.com/websites/gsap-animation/" target="_blank">Awwwards</a>. For some of our
+              favorites, check out <a href="https://greensock.com/showcase/">our showcase</a>.</p>
+          </div>
+
+          <div class="featured-image-container ipsGrid_span5 gs_reveal gs_reveal_fromRight">
+            <div class="card">
+              <img width="479" src="https://picsum.photos/479/479?index=4" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</ion-content>

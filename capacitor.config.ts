@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'ion.green.sock',
   appName: 'ion-green-sock-free',
   webDir: 'www',
   server: {
