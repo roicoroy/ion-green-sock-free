@@ -1279,6 +1279,15 @@
         "hash": "sha512-+j7a5c253RfKh8iABBhywc8NSfP5LURe7Uh4qpsh6jc+aLJguvmIUBdjSdEMQv2bENrCR5MfRdjGo7vzS/ob7w=="
       }
     },
+    "npm:@capacitor/android": {
+      "type": "npm",
+      "name": "npm:@capacitor/android",
+      "data": {
+        "version": "5.7.2",
+        "packageName": "@capacitor/android",
+        "hash": "sha512-T4U+15R/1PyokW0Le92j7AV19kuO25his2ymF2xf2I04fZUDj8RjmXA+za7i3K8vhxtKkTdY2dPAywrfNAM09Q=="
+      }
+    },
     "npm:@capacitor/app": {
       "type": "npm",
       "name": "npm:@capacitor/app",
@@ -12728,6 +12737,13 @@
       {
         "source": "npm:@babel/types",
         "target": "npm:to-fast-properties",
+        "type": "static"
+      }
+    ],
+    "npm:@capacitor/android": [
+      {
+        "source": "npm:@capacitor/android",
+        "target": "npm:@capacitor/core",
         "type": "static"
       }
     ],
