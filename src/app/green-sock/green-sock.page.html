@@ -9,7 +9,81 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="warning" class="ion-padding" [scrollEvents]="true" (ionScroll)="handleScroll($any($event))">
+<ion-content [fullscreen]="true" color="warning" class="ion-padding" [scrollEvents]="true"
+  (ionScroll)="handleScroll($any($event))">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">
+        Creative Animation
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <app-gsap-component></app-gsap-component>
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum praesentium soluta eum, a hic explicabo. Ullam
+    adipisci dolores quidem minima, cumque dolor. Numquam, atque impedit. Quidem fugiat eveniet aut.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum praesentium soluta eum, a hic explicabo. Ullam
+    adipisci dolores quidem minima, cumque dolor. Numquam, atque impedit. Quidem fugiat eveniet aut.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum praesentium soluta eum, a hic explicabo. Ullam
+    adipisci dolores quidem minima, cumque dolor. Numquam, atque impedit. Quidem fugiat eveniet aut.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum praesentium soluta eum, a hic explicabo. Ullam
+    adipisci dolores quidem minima, cumque dolor. Numquam, atque impedit. Quidem fugiat eveniet aut.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum praesentium soluta eum, a hic explicabo. Ullam
+    adipisci dolores quidem minima, cumque dolor. Numquam, atque impedit. Quidem fugiat eveniet aut.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum praesentium soluta eum, a hic explicabo. Ullam
+    adipisci dolores quidem minima, cumque dolor. Numquam, atque impedit. Quidem fugiat eveniet aut.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum praesentium soluta eum, a hic explicabo. Ullam
+    adipisci dolores quidem minima, cumque dolor. Numquam, atque impedit. Quidem fugiat eveniet aut.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum praesentium soluta eum, a hic explicabo. Ullam
+    adipisci dolores quidem minima, cumque dolor. Numquam, atque impedit. Quidem fugiat eveniet aut.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum praesentium soluta eum, a hic explicabo. Ullam
+    adipisci dolores quidem minima, cumque dolor. Numquam, atque impedit. Quidem fugiat eveniet aut.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum praesentium soluta eum, a hic explicabo. Ullam
+    adipisci dolores quidem minima, cumque dolor. Numquam, atque impedit. Quidem fugiat eveniet aut.
+  </p>
+
+  <div class="gs-body-parallax">
+
+
+
+    <section>
+      <div class="bg"></div>
+      <h1>Simple parallax sections</h1>
+    </section>
+
+
+  </div>
+
+  <p class="pin1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum praesentium soluta eum, a hic explicabo. Ullam
+    adipisci dolores quidem minima, cumque dolor. Numquam, atque impedit. Quidem fugiat eveniet aut.
+  </p>
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum praesentium soluta eum, a hic explicabo. Ullam
+    adipisci dolores quidem minima, cumque dolor. Numquam, atque impedit. Quidem fugiat eveniet aut.
+  </p>
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum praesentium soluta eum, a hic explicabo. Ullam
+    adipisci dolores quidem minima, cumque dolor. Numquam, atque impedit. Quidem fugiat eveniet aut.
+  </p>
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ipsum praesentium soluta eum, a hic explicabo. Ullam
+    adipisci dolores quidem minima, cumque dolor. Numquam, atque impedit. Quidem fugiat eveniet aut.
+  </p>
 
   <ion-text color="dark">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, distinctio quia! Rerum voluptas aspernatur sed
@@ -25,7 +99,7 @@
     temporibus tenetur expedita harum incidunt officia assumenda error possimus nisi cum, laborum alias magni libero.
   </ion-text>
 
-  <ion-card>
+  <ion-card class="parallax">
     <p>This is a super simple example of how to create a basic parallax effect using GSAP's ScrollTrigger!</p>
     <p>For more information about ScrollTrigger, check out <a href="https://greensock.com" target="_blank">the
         GreenSock website.</a></p>
@@ -35,11 +109,14 @@
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, distinctio quia! Rerum voluptas aspernatur sed
     temporibus tenetur expedita harum incidunt officia assumenda error possimus nisi cum, laborum alias magni libero.
 
-    <ion-img [src]="'https://picsum.photos/1200/526?random=1'"></ion-img>
+
+    <ion-card class="card">
+      <img src="assets/shapes.svg" alt="">
+    </ion-card>
 
     <span class="trigger">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, distinctio quia! Rerum voluptas aspernatur sed
-    temporibus tenetur expedita harum incidunt officia assumenda error possimus nisi cum, laborum alias magni libero.
+      temporibus tenetur expedita harum incidunt officia assumenda error possimus nisi cum, laborum alias magni libero.
     </span>
 
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, distinctio quia! Rerum voluptas aspernatur sed

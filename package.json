@@ -29,7 +29,7 @@
     "@capacitor/keyboard": "5.0.8",
     "@capacitor/status-bar": "5.0.7",
     "@ionic/angular": "^7.5.0",
-    "gsap": "^3.12.5",
+    "gsap": "file:src/assets/gsap-member/npm-install-this/gsap-bonus.tgz",
     "imports-loader": "^5.0.0",
     "ionicons": "^7.2.1",
     "jquery": "^3.7.1",

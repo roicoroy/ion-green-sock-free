@@ -5675,9 +5675,9 @@
       "type": "npm",
       "name": "npm:gsap",
       "data": {
-        "version": "3.12.5",
+        "version": "file:src/assets/gsap-member/npm-install-this/gsap-bonus.tgz",
         "packageName": "gsap",
-        "hash": "sha512-srBfnk4n+Oe/ZnMIOXt3gT605BX9x5+rh/prT2F1SsNJsU1XuMiP0E2aptW481OnonOGACZWBqseH5Z7csHxhQ=="
+        "hash": "sha512-0rMMmlNG33qxl8nR9CSdRwFX1iHGtSmgxXgt3dReNNiG6zX2koDKSNMb3k/4rA3JmbFw7Ngc//HKyMMkvfNE5Q=="
       }
     },
     "npm:handle-thing": {

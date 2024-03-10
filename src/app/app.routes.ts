@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'creative-animation',
+    redirectTo: 'green-sock',
     pathMatch: 'full',
   },
   {
@@ -20,20 +20,12 @@ export const routes: Routes = [
     loadComponent: () => import('./parallax-header/parallax-header.page').then( m => m.ParallaxHeaderPage)
   },
   {
-    path: 'parallax-ballons',
-    loadComponent: () => import('./parallax-ballons/parallax-ballons.page').then( m => m.ParallaxBallonsPage)
-  },
-  {
     path: 'sliding-scroll',
     loadComponent: () => import('./sliding-scroll/sliding-scroll.page').then( m => m.SlidingScrollPage)
   },
   {
     path: 'reveal-navigation',
     loadComponent: () => import('./reveal-navigation/reveal-navigation.page').then( m => m.RevealNavigationPage)
-  },
-  {
-    path: 'gsap-timeline',
-    loadComponent: () => import('./gsap-timeline/gsap-timeline.page').then( m => m.GsapTimelinePage)
   },
   {
     path: 'snaping-navigation',

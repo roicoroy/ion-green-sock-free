@@ -37,9 +37,7 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-	            "src/assets/DrawSVGPlugin3.min.js",
-	            "src/assets/MotionPathPlugin.min.js",
-	            "src/assets/arrow-animations.js"
+              "src/assets/gsap-member/umd/all.js"
             ]
           },
           "configurations": {

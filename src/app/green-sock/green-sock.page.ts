@@ -8,7 +8,6 @@ import { GsapComponentComponent } from '../gsap-component/gsap-component.compone
 //
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-declare var SplitText: any;
 
 @Component({
   selector: 'app-green-sock',
@@ -28,16 +27,15 @@ export class GreenSockPage implements OnInit {
 
   scroll: any;
 
+  scrollProxy: any;
+
   ngOnInit() {
     gsap.registerPlugin(ScrollTrigger);
-  }
 
-  ionViewDidEnter() {
-
-    const scrollProxy = document.getElementsByTagName('ion-content').item(0)
+    this.scrollProxy = document.getElementsByTagName('ion-content').item(0)
     const self = this;
 
-    ScrollTrigger.scrollerProxy(scrollProxy, {
+    ScrollTrigger.scrollerProxy(this.scrollProxy, {
       scrollTop(value) {
         return self.getScroll().scrollTop;
       },
@@ -46,42 +44,55 @@ export class GreenSockPage implements OnInit {
       }
     });
 
-    // const sections = gsap.utils.toArray(".fullscreen");
 
-    // sections.forEach((section: any, index: any) => {
-    //   const heading = section.querySelector("h1");
-    //   let split = SplitText.create(heading, { type: "chars" });
-    //   //create an animation for each heading
-    //   let animation = gsap.from(split.chars, { y: 100, opacity: 0, stagger: 0.1 });
-    //   ScrollTrigger.create({
-    //     trigger: section,
-    //     scroller: scrollProxy,
-    //     start: "top 40%",
-    //     toggleActions: "play none none reverse",
-    //     animation: animation,
-    //     markers: false
-    //   });
+    let getRatio = (el: any) => window.innerHeight / (window.innerHeight + el.offsetHeight);
 
-    // });
+    gsap.utils.toArray("section").forEach((section: any, i: any) => {
+      section.bg = section.querySelector(".bg");
 
-    gsap.to("ion-card", {
+      // Give the backgrounds some random images
+      section.bg.style.backgroundImage = `url(https://picsum.photos/1600/800?random=${i})`;
+
+      // the first image (i === 0) should be handled differently because it should start at the very top.
+      // use function-based values in order to keep things responsive
+      gsap.fromTo(section.bg, {
+        backgroundPosition: () => i ? `50% ${-window.innerHeight * getRatio(section)}px` : "50% 0px"
+      }, {
+        backgroundPosition: () => `50% ${window.innerHeight * (1 - getRatio(section))}px`,
+        ease: "none",
+        scrollTrigger: {
+          trigger: section,
+          scroller: 'ion-content',
+          // start: () => i ? "top bottom" : "bototm bottom",
+          start: () => "bototm bottom",
+          end: "bottom top",
+          scrub: true,
+          // pin: '.pin1',
+          invalidateOnRefresh: true // to make it responsive
+        }
+      });
+
+    });
+
+
+    gsap.to(".parallax", {
       yPercent: -50,
       ease: "none",
       scrollTrigger: {
-        trigger: "ion-img",
+        trigger: ".parallax",
         scroller: 'ion-content',
         scrub: true
       },
     });
 
-    gsap.to("ion-img", {
+    gsap.to(".card", {
       // yPercent: -50,
       ease: "none",
-      x: 100,
+      x: -100,
       duration: 1,
       rotate: 360,
       scrollTrigger: {
-        trigger: "ion-img",
+        trigger: ".card",
         toggleActions: "play pause resume reverse",
         start: "top center",
         scroller: 'ion-content',
@@ -99,30 +110,6 @@ export class GreenSockPage implements OnInit {
       rotation: 360, x: 100,
       duration: 1
     });
-
-    // gsap.to(".pContent", {
-    //   yPercent: -100,
-    //   ease: "none",
-    //   scrollTrigger: {
-    //     scroller: scrollProxy,
-    //     trigger: ".pSection",
-    //     // start: "top bottom", // the default values
-    //     // end: "bottom top",
-    //     scrub: true
-    //   },
-    // });
-
-    // gsap.to(".pImage", {
-    //   yPercent: 50,
-    //   ease: "none",
-    //   scrollTrigger: {
-    //     trigger: ".pSection",
-    //     scroller: scrollProxy,
-    //     // start: "top bottom", // the default values
-    //     // end: "bottom top",
-    //     scrub: true
-    //   },
-    // });
 
     // @ts-ignore
     gsap.config({ trialWarn: false });

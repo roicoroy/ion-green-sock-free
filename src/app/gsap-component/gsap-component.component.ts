@@ -3,15 +3,9 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
-// declare var ScrollMagic: any;
-// declare var $: any;
-// declare var gsap: any;
-// declare var IScroll: any;
-// import { gsap } from "gsap";
-// import ScrollTrigger from "gsap/ScrollTrigger";
-// import ScrollToPlugin from 'gsap/ScrollToPlugin';
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import { SectionComponent } from '../section/section.component';
-// import IScroll from 'src/assets/ScrollMagic/assets/js/lib/iscroll-probe';
 
 @Component({
   selector: 'app-gsap-component',
@@ -27,11 +21,16 @@ import { SectionComponent } from '../section/section.component';
 })
 export class GsapComponentComponent implements AfterViewInit, OnInit {
 
-  @ViewChild('slideLeft') slideLeft!: ElementRef;
+  // @ViewChild('slideLeft') slideLeft!: ElementRef;
 
-  @ViewChild('pContent') pContent!: ElementRef;
+  // @ViewChild('pContent') pContent!: ElementRef;
 
-  @ViewChild('pImage') pImage!: ElementRef;
+  @ViewChild('layer1') layer1!: ElementRef;
+  @ViewChild('layer2') layer2!: ElementRef;
+  @ViewChild('layer3') layer3!: ElementRef;
+  @ViewChild('layer4') layer4!: ElementRef;
+  @ViewChild('layer5') layer5!: ElementRef;
+  @ViewChild('layer6') layer6!: ElementRef;
 
   scroll!: any;
 
@@ -40,71 +39,34 @@ export class GsapComponentComponent implements AfterViewInit, OnInit {
   ngOnInit(): void {
   }
   ngAfterViewInit(): void {
+    gsap.registerPlugin(ScrollTrigger);
 
-    // this.controller = new ScrollMagic.Controller({ globalSceneOptions: { triggerHook: "onEnter", duration: "200%" } });
+    // console.log(this.layer1.nativeElement.attributes);
+    this.layer1.nativeElement.attributes[1]['data-depth'] = '0.10';
+    this.layer2.nativeElement.attributes[1]['data-depth'] = '0.20';
+    this.layer3.nativeElement.attributes[1]['data-depth'] = '0.50';
+    this.layer4.nativeElement.attributes[1]['data-depth'] = '0.80';
+    this.layer5.nativeElement.attributes[1]['data-depth'] = '0.85';
+    this.layer6.nativeElement.attributes[1]['data-depth'] = '1.00';
+    // console.log(this.layer1);
 
-    // // build scenes
-    // new ScrollMagic.Scene({ triggerElement: "#parallax1" })
-    //   .setTween("#parallax1 > div", { y: "80%", ease: Linear.easeNone })
-    //   .addIndicators()
-    //   .addTo(this.controller);
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#hero",
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+        scroller: '.gs-body'
+      }
+    });
 
-    // new ScrollMagic.Scene({ triggerElement: "#parallax2" })
-    //   .setTween("#parallax2 > div", { y: "80%", ease: Linear.easeNone })
-    //   .addIndicators()
-    //   .addTo(this.controller);
-
-    // new ScrollMagic.Scene({ triggerElement: "#parallax3" })
-    //   .setTween("#parallax3 > div", { y: "80%", ease: Linear.easeNone })
-    //   .addIndicators()
-    //   .addTo(this.controller);
-
-    // $(function () { // wait for document ready					
-    //   // init controller
-    //   // const controllerM = new ScrollMagic.Controller({ container: "#example-wrapper" });
-
-    //   // // init tween
-    //   // var tween = TweenMax.to("#mobileadvanced", 1, { backgroundColor: "black", scale: 0.4, borderRadius: 75 });
-
-    //   // // init scene
-    //   // var scene = new ScrollMagic.Scene({ triggerElement: "#trigger", duration: 500, offset: 75 })
-    //   //   .setTween(tween)
-    //   //   .setPin("#mobileadvanced")
-    //   //   .addTo(controllerM);
-    // });
-
-
-
-    // gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-
-    // let getRatio = (el: any) => window.innerHeight / (window.innerHeight + el.offsetHeight);
-
-    // gsap.utils.toArray("section").forEach((section: any, i: any) => {
-    //   section.bg = section.querySelector(".bg");
-
-    //   // Give the backgrounds some random images
-    //   if(section.bg){
-    //     section.bg.style.backgroundImage = `url(https://picsum.photos/1600/800?random=${i})`;
-    //   }
-      
-
-    //   // the first image (i === 0) should be handled differently because it should start at the very top.
-    //   // use function-based values in order to keep things responsive
-    //   gsap.fromTo(section.bg, {
-    //     backgroundPosition: () => i ? `50% ${-window.innerHeight * getRatio(section)}px` : "50% 0px"
-    //   }, {
-    //     backgroundPosition: () => `50% ${window.innerHeight * (1 - getRatio(section))}px`,
-    //     ease: "none",
-    //     scrollTrigger: {
-    //       trigger: section,
-    //       start: () => i ? "top bottom" : "top top",
-    //       end: "bottom top",
-    //       scrub: true,
-    //       invalidateOnRefresh: true // to make it responsive
-    //     }
-    //   });
-
-    // });
+    gsap.utils.toArray(".parallax").forEach((layer: any) => {
+      // console.log(layer)
+      // console.log(tl)
+      const depth = layer.dataset.depth;
+      const movement = -(layer.offsetHeight * depth)
+      tl.to(layer, { y: movement, ease: "none" }, 0)
+    });
   }
 
 }
