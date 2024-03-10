@@ -37,12 +37,9 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "src/assets/gsap-latest-beta.min.js",
-	            "src/assets/SplitText3.min.js",
 	            "src/assets/DrawSVGPlugin3.min.js",
 	            "src/assets/MotionPathPlugin.min.js",
-	            "src/assets/arrow-animations.js",
-	            "src/assets/MorphSVGPlugin3.min.js"
+	            "src/assets/arrow-animations.js"
             ]
           },
           "configurations": {

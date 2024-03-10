@@ -29,7 +29,7 @@ export class GreenSockPage implements OnInit {
   scroll: any;
 
   ngOnInit() {
-    gsap.registerPlugin(ScrollTrigger, SplitText);
+    gsap.registerPlugin(ScrollTrigger);
   }
 
   ionViewDidEnter() {
@@ -46,23 +46,23 @@ export class GreenSockPage implements OnInit {
       }
     });
 
-    const sections = gsap.utils.toArray(".fullscreen");
+    // const sections = gsap.utils.toArray(".fullscreen");
 
-    sections.forEach((section: any, index: any) => {
-      const heading = section.querySelector("h1");
-      let split = SplitText.create(heading, { type: "chars" });
-      //create an animation for each heading
-      let animation = gsap.from(split.chars, { y: 100, opacity: 0, stagger: 0.1 });
-      ScrollTrigger.create({
-        trigger: section,
-        scroller: scrollProxy,
-        start: "top 40%",
-        toggleActions: "play none none reverse",
-        animation: animation,
-        markers: false
-      });
+    // sections.forEach((section: any, index: any) => {
+    //   const heading = section.querySelector("h1");
+    //   let split = SplitText.create(heading, { type: "chars" });
+    //   //create an animation for each heading
+    //   let animation = gsap.from(split.chars, { y: 100, opacity: 0, stagger: 0.1 });
+    //   ScrollTrigger.create({
+    //     trigger: section,
+    //     scroller: scrollProxy,
+    //     start: "top 40%",
+    //     toggleActions: "play none none reverse",
+    //     animation: animation,
+    //     markers: false
+    //   });
 
-    });
+    // });
 
     gsap.to("ion-card", {
       yPercent: -50,
@@ -93,7 +93,7 @@ export class GreenSockPage implements OnInit {
       scrollTrigger: {
         trigger: ".green",
         toggleActions: "play none none reverse",
-        scroller: scrollProxy,
+        scroller: 'ion-content',
         scrub: true
       },
       rotation: 360, x: 100,

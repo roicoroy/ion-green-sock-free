@@ -1,0 +1,193 @@
+.gs-body {
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+}
+
+// #demo {
+//     // visibility: hidden;
+//     // position: relative;
+//     // width: 100%;
+//     // height: 100%;
+//     // background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/creative-process-bg.png);
+//     // transform: scale(0.7, 0.7) translateY(-50px);
+// }
+
+#main {
+    position: absolute;
+    /* width: 250px; */
+    top: 30vh;
+    /* padding: 9%; */
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: 200;
+    margin-top: -10px;
+}
+
+p {
+    font-weight: 200;
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#images {
+    display: flex;
+    justify-content: center;
+}
+
+.myButton {
+    margin-top: 20px;
+    -moz-box-shadow: inset 0px 1px 0px 0px #fbafe3;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #fbafe3;
+    box-shadow: inset 0px 1px 0px 0px #fbafe3;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ff905c), color-stop(1, #ef027d));
+    background: -moz-linear-gradient(top, #ff905c 5%, #ef027d 100%);
+    background: -webkit-linear-gradient(top, #ff905c 5%, #ef027d 100%);
+    background: -o-linear-gradient(top, #ff905c 5%, #ef027d 100%);
+    background: -ms-linear-gradient(top, #ff905c 5%, #ef027d 100%);
+    background: linear-gradient(to bottom, #ff905c 5%, #ef027d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff905c', endColorstr='#ef027d', GradientType=0);
+    background-color: #ff905c;
+    -moz-border-radius: 17px;
+    -webkit-border-radius: 17px;
+    border-radius: 17px;
+    border: 1px solid #ee1eb5;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #c70067;
+}
+
+.myButton:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ef027d), color-stop(1, #ff905c));
+    background: -moz-linear-gradient(top, #ef027d 5%, #ff905c 100%);
+    background: -webkit-linear-gradient(top, #ef027d 5%, #ff905c 100%);
+    background: -o-linear-gradient(top, #ef027d 5%, #ff905c 100%);
+    background: -ms-linear-gradient(top, #ef027d 5%, #ff905c 100%);
+    background: linear-gradient(to bottom, #ef027d 5%, #ff905c 100%);
+}
+
+.myButton:active {
+    position: relative;
+
+}
+
+// 
+ion-card {
+    height: 500px;
+}
+
+/* Styles from the GreenSock website */
+.gs-body {
+    font-weight: 300;
+}
+
+.ipsType_right {
+    text-align: right;
+}
+
+.ipsType_center {
+    text-align: center;
+}
+
+.cInnerContent {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ipsSpacer_bottom_double {
+    margin-bottom: 30px;
+}
+
+.ipsGrid {
+    display: inline-block;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ipsGrid::before,
+.ipsGrid::after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.ipsGrid>[class*="ipsGrid_span"] {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    box-sizing: border-box;
+}
+
+.ipsGrid>.ipsGrid_span5 {
+    width: 40.42553191489362%;
+}
+
+.ipsGrid>.ipsGrid_span7 {
+    width: 57.44680851063829%;
+}
+
+.ipsGrid>[class*="ipsGrid_span"] {
+    float: left;
+    margin-left: 2%;
+}
+
+.ipsGrid>[class*="ipsGrid_span"]:first-child {
+    margin-left: 0;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    margin-bottom: 30px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 1px 1px 5px 1px #CCCCCC;
+    /*   transition: 0.3s; */
+}
+
+.featured-image-container .card {
+    padding: 10px;
+    height: 0;
+    padding-bottom: calc(100% - 10px);
+}
+
+h2.heading_large {
+    font-size: 1.8em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header-section {
+    // margin: 200px auto;
+}
+
+.gs_reveal {
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform, opacity;
+}

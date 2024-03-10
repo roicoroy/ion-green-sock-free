@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'creative-animation',
     pathMatch: 'full',
   },
   {
@@ -42,5 +42,9 @@ export const routes: Routes = [
   {
     path: 'home',
     loadComponent: () => import('./home/home.page').then( m => m.HomePage)
+  },
+  {
+    path: 'creative-animation',
+    loadComponent: () => import('./creative-animation/creative-animation.page').then( m => m.CreativeAnimationPage)
   },
 ];

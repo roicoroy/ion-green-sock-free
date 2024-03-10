@@ -24,7 +24,7 @@ export class ParallaxHeaderPage implements OnInit {
   scroll: any;
 
   ngOnInit() {
-    gsap.registerPlugin(ScrollTrigger, SplitText);
+    gsap.registerPlugin(ScrollTrigger);
     const scrollProxy = document.getElementsByTagName('ion-content').item(0)
     const self = this;
 

@@ -15,12 +15,13 @@ import { mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, heartOutlin
 export class AppComponent {
   public appPages = [
     { title: 'green-sock', url: '/green-sock', icon: 'mail' },
-    { title: 'parallax-header', url: '/parallax-header', icon: 'paper-plane' },
-    { title: 'parallax-ballons', url: '/parallax-ballons', icon: 'heart' },
+    // { title: 'parallax-header', url: '/parallax-header', icon: 'paper-plane' },
+    // { title: 'parallax-ballons', url: '/parallax-ballons', icon: 'heart' },
     { title: 'sliding-scroll', url: '/sliding-scroll', icon: 'archive' },
-    { title: 'reveal-navigation', url: '/reveal-navigation', icon: 'trash' },
-    { title: 'gsap-timeline', url: '/gsap-timeline', icon: 'warning' },
-    { title: 'snaping-navigation', url: '/snaping-navigation', icon: 'warning' },
+    // { title: 'reveal-navigation', url: '/reveal-navigation', icon: 'trash' },
+    // { title: 'gsap-timeline', url: '/gsap-timeline', icon: 'warning' },
+    // { title: 'snaping-navigation', url: '/snaping-navigation', icon: 'warning' },
+    { title: 'creative-animation', url: '/creative-animation', icon: 'warning' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {

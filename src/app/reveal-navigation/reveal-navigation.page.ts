@@ -21,7 +21,7 @@ export class RevealNavigationPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    gsap.registerPlugin(ScrollTrigger, SplitText);
+    gsap.registerPlugin(ScrollTrigger);
     this.scrollProxy = document.getElementsByTagName('ion-content').item(0)
     const self = this;
 
